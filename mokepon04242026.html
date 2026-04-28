@@ -3,7 +3,62 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>MOKEPON!</title>
     </head>
-    <body></body>
+    <body>
+        <h1>MOKEPON!</h1>
+
+        <section id="seleccionar-mascota">
+            <h2>Elige tu mascota</h2>
+
+            <label for="hipodoge">Hipodoge</label>
+            <input type="radio" name="mascota" id="hipodoge" />
+
+            <label for="capipepo">Capipepo</label>
+            <input type="radio" name="mascota" id="capipepo" />
+
+            <label for="ratigueya">Ratigueya</label>
+            <input type="radio" name="mascota" id="ratigueya" />
+
+            <label for="langostel">Langostel</label>
+            <input type="radio" name="mascota" id="langostel" />
+
+            <label for="tucapal">Tucapal</label>
+            <input type="radio" name="mascota" id="tucapal" />
+
+            <label for="pydos">Pydos</label>
+            <input type="radio" name="mascota" id="pydos" />
+
+            <!-- Agua Capipedo -> Tierra Ratigueya -> Fuego Lasgostel -> Agua y
+            Fuego Tucapal -> Agua y Tierra Pydos -> Tierra y Fuego -->
+
+            <button>Seleccionar</button>
+        </section>
+
+        <section id="seleccionar-ataque">
+            <h2>Elige tu ataque</h2>
+
+            <p>Tu mascota tiene <span>3</span> vidas</p>
+            <p>La mascota enemigo tiene <span>3</span> vidas</p>
+            <p>
+                <button>Fuego</button>
+                <button>Agua</button>
+                <button>Tierra</button>
+                <button>Aire</button>
+            </p>
+        </section>
+
+        <section id="mensajes">
+            <p>Tu mascoca atacó con <span>atque</span></p>
+            <p>La mascoca enemigo atacó con <span>atque</span></p>
+        </section>
+
+        <!-- El valor 'nombre' en 'for' debe coincidir con el 'id' del input -->
+        <label for="">Nombre Completo:</label>
+        <input type="radio" id="riñon" name="nombre" />
+
+        <section id="reiniciar">
+            <button>Reiniciar</button>
+        </section>
+    </body>
 </html>
