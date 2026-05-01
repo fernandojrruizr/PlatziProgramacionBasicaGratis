@@ -4,7 +4,6 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>MOKEPON!</title>
-        <script src="./js/mokepon0424.js"></script>
     </head>
     <body>
         <h1>MOKEPON!</h1>
@@ -33,25 +32,37 @@
             <!-- Agua Capipedo -> Tierra Ratigueya -> Fuego Lasgostel -> Agua y
             Fuego Tucapal -> Agua y Tierra Pydos -> Tierra y Fuego -->
 
-            <button>Seleccionar</button>
+            <button id="boton-mascota">Seleccionar</button>
         </section>
 
         <section id="seleccionar-ataque">
             <h2>Elige tu ataque</h2>
 
-            <p>Tu mascota tiene <span>3</span> vidas</p>
-            <p>La mascota enemigo tiene <span>3</span> vidas</p>
             <p>
-                <button>Fuego</button>
-                <button>Agua</button>
-                <button>Tierra</button>
-                <button>Aire</button>
+                Tu mascota <span id="mascota-jugador"></span> tiene
+                <span>3</span> vidas
+            </p>
+            <p>
+                La mascota <span id="mascota-enemigo"></span> enemigo tiene
+                <span>3</span> vidas
+            </p>
+            <p>
+                <button id="boton-agua">Agua</button>
+                <button id="boton-tierra">Tierra</button>
+                <button id="boton-fuego">Fuego</button>
+                <button id="boton-aire">Aire</button>
             </p>
         </section>
 
         <section id="mensajes">
-            <p>Tu mascoca atacó con <span>atque</span></p>
-            <p>La mascoca enemigo atacó con <span>atque</span></p>
+            <p>
+                Tu mascoca <span id="mascota-jugador"></span> atacó con
+                <span>atque</span>
+            </p>
+            <p>
+                La mascoca enemigo <span id="mascota-enemigo"></span> atacó con
+                <span>atque</span>
+            </p>
         </section>
 
         <!-- El valor 'nombre' en 'for' debe coincidir con el 'id' del input -->
@@ -61,5 +72,7 @@
         <section id="reiniciar">
             <button>Reiniciar</button>
         </section>
+
+        <script src="./js/mokepon0424.js"></script>
     </body>
 </html>
